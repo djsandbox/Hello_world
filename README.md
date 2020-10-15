@@ -7,12 +7,13 @@ light = ["Walk to it, Turn around"]
  
 # Introduction
 name = input("What is your name?")
+# this is where they ask you what your name is 
 print("This is case sensitive, meaning you need to use capitals or else it wont work.")
 print("Greetings, " + name + ". Lets have an adventure!")
 print("You find yourself on the edge of a dark forest.")
 print("Can you find your way through?")
  
-# Start of game
+# Start of game 
 response = ""
 while response not in yes_no:
     response = input("Would you like to step into the forest?\nyes/no\n")
@@ -32,6 +33,7 @@ while response not in directions:
     print("There is a rock wall directly in front of you.")
     print("Behind you is the forest exit.\n")
     response = input("What direction do you move?\nleft/right/forward/backward\n")
+# this is where is asks you which direction and you would choose which way you would like to go 
     if response == "left":
         print("The bear eats you. Farewell, " + name + ".")
         quit()
